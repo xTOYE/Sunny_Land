@@ -45171,11 +45171,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GreenPortal
       objectReference: {fileID: 0}
-    - target: {fileID: 2150877414707456300, guid: 335a03b38dd88e74fbd60611d38525fb,
-        type: 3}
-      propertyPath: m_TagString
-      value: Portal
-      objectReference: {fileID: 0}
     - target: {fileID: 2150877414707456303, guid: 335a03b38dd88e74fbd60611d38525fb,
         type: 3}
       propertyPath: m_LocalPosition.x

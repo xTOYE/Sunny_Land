@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/next scene test.unity
+    guid: 9c7669acf28d65d45ac7970984a2babd
+  - enabled: 1
+    path: Assets/Sunny_Land.unity
+    guid: f152ebb060865e248aa778577b9928c1
   m_configObjects: {}

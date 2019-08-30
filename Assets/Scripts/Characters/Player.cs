@@ -52,4 +52,16 @@ public class Player : MonoBehaviour
             Destroy(col.gameObject);
         }
     }
+
+    private void OnTriggerStay2D(Collider2D col)
+    {
+        
+        if(col.CompareTag("Portal"))
+        {
+            if(Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                col.SendMessage("Interact");
+            }
+        }
+    }
 }
