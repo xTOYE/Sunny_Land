@@ -1830,6 +1830,7 @@ MonoBehaviour:
   jumpHeight: 4
   climbSpeed: 10
   moveSpeed: 10
+  portalDistance: 1
 --- !u!114 &1341460845
 MonoBehaviour:
   m_ObjectHideFlags: 0
