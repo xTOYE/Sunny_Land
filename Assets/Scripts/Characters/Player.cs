@@ -22,8 +22,8 @@ public class Player : MonoBehaviour
     {
         /*
         * --- Unity Tip ---
-        * Input.GetAxis - 
-        * Input.GetAxisRaw - 
+        * Input.GetAxis - builds up speed
+        * Input.GetAxisRaw - instant speed
         */
 
         // Temp variables
@@ -39,5 +39,17 @@ public class Player : MonoBehaviour
         controller.Climb(vertical * climbSpeed);
 
         controller.Move(horizontal * moveSpeed);
+    }
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        //detect hitting items
+        if(col.gameObject.tag == "Item")
+        {
+            //add 1 to score - gamemanager
+            GameManager.Instance.AddScore(1);
+            //play chime sound - requires audio source
+            //destroy item
+            Destroy(col.gameObject);
+        }
     }
 }
