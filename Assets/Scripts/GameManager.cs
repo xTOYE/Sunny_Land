@@ -22,18 +22,19 @@ public class GameManager : MonoBehaviour
     }
 
 
-    public void Restart()
+    public void NextScene()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        // Get current scene
+        Scene activeScene = SceneManager.GetActiveScene();
+        // Load next scene
+        SceneManager.LoadScene(activeScene.buildIndex + 1);
     }
 
-    public void NextLevel()
+    public void ResetScene()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
-    }
-
-    public void PrevLevel()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -1);
+        // Get current scene
+        Scene activeScene = SceneManager.GetActiveScene();
+        // Load next scene
+        SceneManager.LoadScene(activeScene.buildIndex);
     }
 }
